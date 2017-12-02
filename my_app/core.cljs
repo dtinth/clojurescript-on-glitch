@@ -21,7 +21,7 @@
    [:body
     [:h1 "Hello from ClojureScript in Glitch"]
     [:p "You can change this file, and it hot-reloads (the hit counter doesn’t reset)!"]
-    [:a {:href "https://glitch.com/edit/#!/clojurescript"} "Remix me!"]
+    [:a {:href "https://glitch.com/edit/#!/clojurescript-on-glitch"} "Remix me!"]
     [:p "Hit counter: " (swap! hit-counter inc)]]])
 
 ; ---------------------------
