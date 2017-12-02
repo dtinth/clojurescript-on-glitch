@@ -11,7 +11,7 @@ const live = require('uncache')(require)
 const app = require('express')()
 app.use(function (req, res, next) {
   live('./my_app/core.cljs')
-  const router = cljs.eval('my-app.core.router', cljs.defaultContext)
+  const router = cljs.eval('my-app.core/router', cljs.defaultContext)
   router(req, res, next)
 })
 
